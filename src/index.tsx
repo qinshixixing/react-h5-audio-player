@@ -214,7 +214,7 @@ class H5AudioPlayer extends Component<PlayerProps> {
   togglePlay = (e: React.SyntheticEvent): void => {
     e.stopPropagation()
     const audio = this.audio.current
-    if ((audio.paused || audio.ended) && audio.src) {
+    if (audio.paused || audio.ended) {
       this.playAudioPromise()
     } else if (!audio.paused) {
       audio.pause()

@@ -1,6 +1,6 @@
 {
-  "name": "react-h5-audio-player",
-  "version": "3.8.6",
+  "name": "@fortissimo-deps/react-h5-audio-player",
+  "version": "1.0.0",
   "description": "A customizable React audio player. Written in TypeScript. Mobile compatible. Keyboard friendly",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -19,6 +19,10 @@
     "storybook": "start-storybook -p 9000",
     "build:storybook": "build-storybook -c .storybook -o docs",
     "prepare": "husky install"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -49,7 +53,7 @@
     "mse",
     "eme"
   ],
-  "author": "Hanz Luo",
+  "author": "qinshixixing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lhz516/react-h5-audio-player/issues"
